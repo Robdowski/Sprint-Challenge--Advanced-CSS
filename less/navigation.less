@@ -1,1 +1,28 @@
 // Navigation code here
+
+h1{
+    font-size: 4.2rem;
+    text-align:center;
+    padding: 1vh 0;
+    background-color:@nav-bg;
+}
+
+nav{
+    .flexit();
+    background-color:@nav-bg;
+    border-bottom: 2px solid @nav-border;
+    
+    a{
+        .flexit();
+        padding: 1vh 1.5vw;
+        font-size: 1.6rem;
+        font-family:@nav-font;
+        color:@header-font-color;
+        text-decoration: none;
+
+        @media @phone{
+            padding: 1vh 2.5vw;
+        }
+    }
+}
+
